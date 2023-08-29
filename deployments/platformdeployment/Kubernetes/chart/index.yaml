@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  yelb:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2023-08-29T20:30:21.824312266Z"
+    description: Yelb! The only hub for healthy food recommendations
+    digest: 119ae539063037795d5458ecd84c7ef69a5ec5ef7de45fb166a202ca41457213
+    name: yelb
+    urls:
+    - yelb-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-08-29T20:30:21.82397485Z"
