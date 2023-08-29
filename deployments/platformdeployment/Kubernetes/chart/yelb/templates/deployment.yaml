@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: yelb-ui
-        image:  nomisbeme/yelb-ui:0.6
+        image:  mreferre/yelb-ui:0.10
         ports:
         - containerPort: 80
         env:
