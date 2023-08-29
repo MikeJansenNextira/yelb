@@ -21,6 +21,14 @@
 			"xqVersion": "none"
 		},
 		"ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:0": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-kubernetes-tools.vscode-kubernetes-tools",
+				"tim-koehler.helm-intellisense"
+			]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
