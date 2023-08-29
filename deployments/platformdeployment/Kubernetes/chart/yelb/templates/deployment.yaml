@@ -4,6 +4,10 @@ metadata:
   name: {{ template "yelb.fullname" . }}-ui
 spec:
   replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ template "yelb.fullname" . }}
+      tier: frontend
   template:
     metadata:
       labels:
@@ -27,6 +31,10 @@ metadata:
   name: {{ template "yelb.fullname" . }}-cache
 spec:
   replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ template "yelb.fullname" . }}
+      tier: cache
   template:
     metadata:
       labels:
@@ -47,6 +55,10 @@ metadata:
   name: {{ template "yelb.fullname" . }}-db
 spec:
   replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ template "yelb.fullname" . }}
+      tier: backenddb
   template:
     metadata:
       labels:
@@ -67,6 +79,10 @@ metadata:
   name: {{ template "yelb.fullname" . }}-appserver
 spec:
   replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ template "yelb.fullname" . }}
+      tier: middletier
   template:
     metadata:
       labels:
